@@ -1,0 +1,53 @@
+{
+  "name": "create-vue-forge",
+  "version": "1.0.0",
+  "description": "Vue scaffold CLI with Monorepo, TypeScript, Pinia, Vue Router, ESLint, Prettier, Changesets",
+  "type": "module",
+  "bin": {
+    "create-vue-forge": "./dist/index.js",
+    "cvf": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "scaffold",
+    "cli",
+    "monorepo",
+    "typescript",
+    "pinia",
+    "vite"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-name/create-vue-forge"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --target node18 --clean",
+    "dev": "tsup src/index.ts --format esm --target node18 --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.0",
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
