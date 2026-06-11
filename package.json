@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-name/create-vue-forge"
+    "url": "https://github.com/CoderBOBO/create-vue-forge"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm --target node18 --clean",
