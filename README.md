@@ -1,5 +1,7 @@
 # create-vue-forge
 
+hello
+
 Vue 3 脚手架 CLI，支持 TypeScript、Pinia、Vue Router、ESLint、Prettier、Vitest，以及带独立发版管理的 Monorepo 模式。
 
 ## 安装
