@@ -67,16 +67,16 @@ cvf my-workspace --yes --type monorepo --packages "app,ui,utils"
 
 **可用 flags：**
 
-| Flag | 默认值 | 说明 |
-|------|--------|------|
-| `--yes` / `-y` | `false` | 非交互模式，使用默认值或指定 flags |
-| `--type` / `-t` | `single` | 项目类型：`single` 或 `monorepo` |
-| `--packages` / `-p` | `app,ui,utils` | Monorepo 包名，逗号分隔 |
-| `--ts` / `--no-ts` | `true` | 是否启用 TypeScript |
-| `--pinia` / `--no-pinia` | `true` | 是否添加 Pinia |
-| `--router` / `--no-router` | `true` | 是否添加 Vue Router |
-| `--lint` / `--no-lint` | `true` | 是否添加 ESLint + Prettier |
-| `--vitest` / `--no-vitest` | `true` | 是否添加 Vitest |
+| Flag                       | 默认值         | 说明                               |
+| -------------------------- | -------------- | ---------------------------------- |
+| `--yes` / `-y`             | `false`        | 非交互模式，使用默认值或指定 flags |
+| `--type` / `-t`            | `single`       | 项目类型：`single` 或 `monorepo`   |
+| `--packages` / `-p`        | `app,ui,utils` | Monorepo 包名，逗号分隔            |
+| `--ts` / `--no-ts`         | `true`         | 是否启用 TypeScript                |
+| `--pinia` / `--no-pinia`   | `true`         | 是否添加 Pinia                     |
+| `--router` / `--no-router` | `true`         | 是否添加 Vue Router                |
+| `--lint` / `--no-lint`     | `true`         | 是否添加 ESLint + Prettier         |
+| `--vitest` / `--no-vitest` | `true`         | 是否添加 Vitest                    |
 
 ---
 
@@ -201,36 +201,36 @@ pnpm release
 
 **需要在仓库 Secrets 中配置：**
 
-| Secret | 说明 |
-|--------|------|
-| `NPM_TOKEN` | npm 发布 token（`npm token create`） |
-| `GITHUB_TOKEN` | 自动提供，无需手动配置 |
+| Secret         | 说明                                 |
+| -------------- | ------------------------------------ |
+| `NPM_TOKEN`    | npm 发布 token（`npm token create`） |
+| `GITHUB_TOKEN` | 自动提供，无需手动配置               |
 
 ### 版本号语义
 
-| 变更类型 | 版本级别 | 示例 |
-|---------|---------|------|
-| Bug 修复 | `patch` | `1.0.0` → `1.0.1` |
-| 新功能（向后兼容） | `minor` | `1.0.0` → `1.1.0` |
-| 破坏性变更 | `major` | `1.0.0` → `2.0.0` |
+| 变更类型           | 版本级别 | 示例              |
+| ------------------ | -------- | ----------------- |
+| Bug 修复           | `patch`  | `1.0.0` → `1.0.1` |
+| 新功能（向后兼容） | `minor`  | `1.0.0` → `1.1.0` |
+| 破坏性变更         | `major`  | `1.0.0` → `2.0.0` |
 
 ---
 
 ## 技术栈说明
 
-| 工具 | 版本 | 用途 |
-|------|------|------|
-| [Vue 3](https://vuejs.org/) | `^3.4` | 框架 |
-| [Vite](https://vitejs.dev/) | `^5.2` | 构建工具 |
-| [TypeScript](https://www.typescriptlang.org/) | `^5.4` | 类型系统 |
-| [Pinia](https://pinia.vuejs.org/) | `^2.1` | 状态管理 |
-| [Vue Router](https://router.vuejs.org/) | `^4.3` | 路由 |
-| [ESLint](https://eslint.org/) | `^9` | 代码检查（Flat Config） |
-| [@antfu/eslint-config](https://github.com/antfu/eslint-config) | `^2.9` | ESLint 规则集 |
-| [Prettier](https://prettier.io/) | `^3.2` | 代码格式化 |
-| [Vitest](https://vitest.dev/) | `^1.4` | 单元测试 |
-| [Changesets](https://github.com/changesets/changesets) | `^2.27` | 版本管理（Monorepo） |
-| [pnpm](https://pnpm.io/) | `>=8` | 包管理器 |
+| 工具                                                           | 版本    | 用途                    |
+| -------------------------------------------------------------- | ------- | ----------------------- |
+| [Vue 3](https://vuejs.org/)                                    | `^3.4`  | 框架                    |
+| [Vite](https://vitejs.dev/)                                    | `^5.2`  | 构建工具                |
+| [TypeScript](https://www.typescriptlang.org/)                  | `^5.4`  | 类型系统                |
+| [Pinia](https://pinia.vuejs.org/)                              | `^2.1`  | 状态管理                |
+| [Vue Router](https://router.vuejs.org/)                        | `^4.3`  | 路由                    |
+| [ESLint](https://eslint.org/)                                  | `^9`    | 代码检查（Flat Config） |
+| [@antfu/eslint-config](https://github.com/antfu/eslint-config) | `^2.9`  | ESLint 规则集           |
+| [Prettier](https://prettier.io/)                               | `^3.2`  | 代码格式化              |
+| [Vitest](https://vitest.dev/)                                  | `^1.4`  | 单元测试                |
+| [Changesets](https://github.com/changesets/changesets)         | `^2.27` | 版本管理（Monorepo）    |
+| [pnpm](https://pnpm.io/)                                       | `>=8`   | 包管理器                |
 
 ---
 
